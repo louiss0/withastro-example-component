@@ -1,0 +1,24 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Example from '../components/Example.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead 
+		title={SITE_TITLE} 
+		description={SITE_DESCRIPTION} 
+		/>
+	</head>
+	<body>
+		
+		If you decided to open this before looking at components you'll see that 
+		Astro ignores all props defined with <strong>generics</strong>.  I decided to call the component example. 
+
+		<Example />
+	</body>
+</html>
